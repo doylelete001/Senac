@@ -5,7 +5,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
-    background-color:  #16131d;
+    background-color: #16131d;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    width:100%;
+    font-size: xxx-large;
+}
+h2 {
+color:white;
 }
 
 .container {
@@ -17,7 +28,7 @@
 }
 
 header {
-    background-color:  #16131d;
+    background-color: #16131d;
     width: 100%;
     padding: 1px;
 
@@ -30,6 +41,7 @@ Botoens {
 
 .logo img {
     width: 80px;
+    cursor: pointer;
 }
 
 .menu {
@@ -41,14 +53,38 @@ Botoens {
     text-decoration: none;
     padding-right: 50px;
     font-size: 18px;
+    position: relative;
 }
+.menu nav a::after{
+    content: "";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg,#ffffff,black);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+}
+.menu nav a:hover::after{
+    width: 50px;
+}
+
+
 
 .Botoens button {
     width: 40px;
     height: 40px;
-    background-image: linear-gradient(45deg, white,);
+    background-image: linear-gradient(45deg,#16131d);
+    border:none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 10px;
 }
 
 .Botoens button i {
     font-size: 20px;
+    color: #ffffff;
+}
+.coluna img {
+width: 300px;
 }
