@@ -85,6 +85,35 @@ Botoens {
     font-size: 20px;
     color: #ffffff;
 }
+.animes{
+display: flex;
+justify-content: center;
+justify-content: space-between;
+}
+
+
 .coluna img {
-width: 300px;
+width: 280px;
+height: 150px;
+cursor: pointer;
+}
+.animes-2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.coluna-2 img {
+width: 280px;
+height: 150px;
+cursor: pointer;
+}
+.animes-3{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.coluna-3 img {
+width: 280px;
+height: 150px;
+cursor: pointer;
 }
