@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #16131d;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(41, 40, 40);
+    width:100%;
+    font-size: xxx-large;
+}
+h2 {
+color:white;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #16131d;
+    width: 100%;
+    padding: 1px;
+
+}
+
+.logo,
+Botoens {
+    width: 25%;
+}
+
+.logo img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu nav a {
+    color: grey;
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 18px;
+    position: relative;
+}
+.menu nav a::after{
+    content: "";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg,#ffffff,black);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+}
+.menu nav a:hover::after{
+    width: 50px;
+}
+
+
+
+.Botoens button {
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg,#ffffff);
+    border:none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 10px;
+    color:#ffffff
+}
+
+.Botoens button i {
+    font-size: 30px;
+    color: #ffffff;
+}
+.Botao-2{
+font-size: 20px;
+color: #ffffff
+}
+.animes{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    }
+    
+    
+    .coluna img {
+    width: 500px;
+    height: 700px;
+    cursor: pointer;
+    }
