@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
-    background-color: #16131d;
+    background-color: #d2d2d2;
 }
 h1 {
     display: flex;
@@ -28,7 +28,7 @@ color:white;
 }
 
 header {
-    background-color: #16131d;
+    background-color: #d2d2d2;
     width: 100%;
     padding: 1px;
 
@@ -37,40 +37,13 @@ header {
 .logo,
 Botoens {
     width: 25%;
+    margin-right: 600px;
 }
 
 .logo img {
     width: 100px;
     cursor: pointer;
 }
-
-.menu {
-    width: 50%;
-}
-
-.menu nav a {
-    color: grey;
-    text-decoration: none;
-    padding-right: 50px;
-    font-size: 18px;
-    position: relative;
-}
-.menu nav a::after{
-    content: "";
-    width: 0px;
-    height: 4px;
-    background-image: linear-gradient(45deg,#ffffff,black);
-    position: absolute;
-    top: 30px;
-    left: 0;
-    transition: width 0.5s;
-}
-.menu nav a:hover::after{
-    width: 50px;
-}
-
-
-
 .Botao-1 button {
     width: 40px;
     height: 40px;
@@ -122,10 +95,24 @@ color: #ffffff
     
       .banner-image img {
         width: 100%;
-        height: auto;
+        height: 100%;
         transition: transform 0.3s;
       }
     
       .banner-image:hover img {
         transform: scale(1.1);
       }
+      .titulo{
+        display: flex;
+        justify-content: center;
+        font-size: x-large;
+        font-size: 1.5rem;
+     
+        
+      }
+    .titulo-2 {
+        height: 0.25rem;
+        width: 100%;
+        margin-top: 0.5rem;
+        background-image: linear-gradient(to var(--cr-start-direction),#213944,#2abdbb);
+    }
