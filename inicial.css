@@ -16,7 +16,10 @@ h1 {
     font-size: xxx-large;
 }
 h2 {
-color:white;
+color:rgb(41, 40, 40);
+display: flex;
+align-items: center;
+justify-content:center ;
 }
 
 .container {
@@ -69,18 +72,11 @@ color: #ffffff
     justify-content: space-between;
     }
     
-    
     .coluna img {
     width: 500px;
     height: 700px;
     cursor: pointer;
     }
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-      }
-    
       #banner {
         display: flex;
         overflow: hidden;
@@ -116,53 +112,155 @@ color: #ffffff
         margin-top: 0.5rem;
         background-image: linear-gradient(to var(--cr-start-direction),#213944,#2abdbb);
     }
-
-
-    .slider {
-      margin: 0 auto;
-      width: 800px;
-      height: 400px;
-      overflow: hidden;
-    }
-    .slides{
-      width: 400%;
-      height: 400px;
-      display: flex;
-    }
-    .slides input {
-      display: none;
-    }
-    .slide{
-      width: 25%;
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
       position: relative;
+      margin: auto;
     }
-    .slide img {
-      width: 800px;
+    
+    /* Caption text */
+    .text {
+      color: #000 ;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
     }
+  
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: rgb(80, 79, 79);
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    @keyframes slidesImg { 
 
-  .manual-navigation{
-    position: absolute;
-    width: 400px;
-    margin-top: -40px;
-    display:flex;
-    justify-content: center;
-  }
-  .manual-btn {
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  .manual-btn:not(:last-child){
-    margin-right: 40px;
-  }
-  .manual-btn:hover{
-     background-color: #fff;
-  }
-  #radio1:checked ~ .first{
-    margin-left:0;
-  }
-  #radio1:checked ~ .first{
-    margin-left: -25%;
-  }
+       from{ 
+      
+       transform: translateX(0); 
+      
+       } 
+      
+       to{ 
+      
+       transform: translateX(-100%); 
+      
+       } 
+      
+      } 
+      
+      .slides{ 
+      
+       overflow: hidden; 
+      
+       padding: 25px 0; 
+      
+       white-space: nowrap; 
+      
+     position: relative; 
+      
+       background: rgb(218, 212, 212);
+      
+      } 
+      
+       
+      
+      .slides:before, 
+      
+      .slides:after { 
+      
+       position: absolute; 
+      
+       top: 0; 
+      
+       width: 100px; 
+      
+       height: 100%; 
+      
+       content: ""; 
+      
+      } 
+      
+       
+      
+      .slides:before { 
+      
+       left: 0; 
+      
+       background: linear-gradient(to left, rgba(255, 255, 255, 0), white); 
+      
+      } 
+      
+       
+      
+      .slides:after { 
+      
+       right: 0; 
+      
+       background: linear-gradient(to right, rgba(255, 255, 255, 0), white); 
+      
+      } 
+      
+       
+      
+      .slides:hover .slides_img{ 
+      
+       animation-play-state: paused; 
+      
+      } 
+      
+       
+      
+      .slides_img{ 
+      
+       display: inline-block; 
+      
+     animation: 12s slidesImg infinite linear; 
+      
+      } 
+      
+    
+      
+      .slides_img img{ 
+      
+      height: auto; 
+      
+      width: 10%; 
+      
+       margin: 0 40px; 
+      
+      } 
+      
+       
