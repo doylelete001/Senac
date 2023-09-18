@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
-    background-color: #16131d;
+    background-color: #d2d2d2;
 }
 h1 {
     display: flex;
@@ -28,7 +28,7 @@ color:white;
 }
 
 header {
-    background-color: #16131d;
+    background-color: #d2d2d2;
     width: 100%;
     padding: 1px;
 
