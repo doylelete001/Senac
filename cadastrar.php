@@ -11,28 +11,34 @@
 
 <body>
     <header>
+<form method = "POST" action = "config.php" class="input">
+
         <title> Meu site </title>
         <div class="container">
             <div class="container2"> <img src="img_login/pngegg.png" alt=""></div>
             <div class="card">
                 <h1> Cadastro </h1>
                 <div class=" texto">
-                    <label for="usuario">Usuario</label>
-                    <input type="text" name="usuario" placeholder="Usuario">
+                    <label for="nome">NOME</label>
+                    <input type="text" name="nome" placeholder="Digite Seu Nome ">
+                <div class=" texto">
+                <div class=" texto">
+                    <label for="cpf">CPF</label>
+                    <input type="number" name="cpf" placeholder="Digite Seu Cpf ">
                     <div class=" texto">
                         <label for="senha">Email</label>
-                        <input type="text" name="email" placeholder="Email">
+                        <input type="email" name="email" placeholder="Email">
                         <div class=" texto">
                             <label for="senha">Senha</label>
                             <input type="password" name="senha" placeholder="Senha">
                         </div>
-                        <a href="login.html">
-                        <button class="glow-on-hover">Cadastre-se</button>
-                    </a>
+                 <button class="glow-on-hover">Cadastre-se</button>
+                      
                     </div>
                 </div>
 
             </div>
+</form>
     </header>
 </body>
 

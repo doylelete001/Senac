@@ -126,3 +126,58 @@ body {
 .container2 img {
     width: 60%;
 }
+#cadastrar-se { 
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #16131d;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 12pt;
+    text-align: center;
+    text-justify: center;
+    text-decoration: none;
+    
+}
+#cadastrar-se:before {
+        content: '';
+        background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff, #000000, #ffffff, #fffefe, #ffffff, #000000, #ffffff);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+    #cadastrar-se:active {
+        color: #16131d
+    }
+    #cadastrar-se:active ::after{
+    background:transparent;
+    }
+    #cadastrar-se:hover:before{
+        opacity: 1;
+    }
+    #cadastrar-se:after{
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #16131d;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
