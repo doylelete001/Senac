@@ -1,15 +1,15 @@
 <?php
 
-//-----------------------conexão com o banco de dados------------------------------- //
+//conexão com o banco de dados//
 $conexao = mysqli_connect("localhost", "root", "", "ichibanimes");
-//-----------------------checar se o cpf já existe------------------------------- //
+//checar se o cpf já existe//
 
 $cpf = $_POST["cpf"];
 $checar = "SELECT * FROM usuario WHERE cpf='$cpf'";
 $retorno = mysqli_query($conexao, $checar);
 $numRowsRetorno = $retorno->num_rows;
 
-//-----------------------------realizar cadastro------------------------------- //
+//realizar cadastro//
 
 if($numRowsRetorno>0) {
     echo '<script>alert("CPF já cadastrado!!!");</script>';
