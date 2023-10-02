@@ -13,12 +13,12 @@
         <div class="container">
             <div class="logo"><img src="IMG/ola.png"alt=""></div>
             <div class="Botao-1">
-              <a href="login.html">
+              <a href="login.php">
                 <button><i>Login</i></button>
               </a>
             </div>
             <div class="Botao-1">
-              <a href="cadastrar.html">
+              <a href="cadastrar.php">
                 <button>Cadastro</button>
               </a>
             </div>

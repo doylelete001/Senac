@@ -16,7 +16,7 @@ $usuarioqueryrow = $usuarioquery->num_rows;
 if($usuarioqueryrow === 1){
     $id = mysqli_fetch_assoc($usuarioquery);
 $_SESSION["email"] =  $id["email"];
- header("location: inicial.html");
+ header("location: inicio.html");
 } else{
 echo "email ou senha inválidos";
 }
