@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <title> Meu site </title>
     <form method = "POST" action = "loginLogica.php" class="input">
     <div class="container">
         <div class="container2"> <img src="img_login/pngegg.png" alt=""></div>
@@ -33,7 +32,6 @@
             </a>
             </div>
         </div>
-    </div>
     </div>
 </form>
 </body>
