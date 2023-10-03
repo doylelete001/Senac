@@ -13,13 +13,19 @@
     width: 100vw;
     background-color: #16131d;
     font-size: larger;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    color: rgb(128, 8, 172);
+  align-items: center;
+  justify-content: center;
+  text-align: center;               
 }
 .container3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+    margin-left: 40px;
+}   
+.palavras {
+    width: 1000px;
+}
+
+h1{
+color: #c20a0a;
 }
