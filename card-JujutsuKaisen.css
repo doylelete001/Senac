@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
+@import url();
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
-    background-color: #16131d;
+    background-color: #000;
 }
 .container {
     max-width: 1080px;
@@ -16,7 +16,7 @@
 }
 
 header {
-    background-color: #16131d;
+    background-color: #000;
     width: 100%;
     padding: 1px;
 
@@ -28,7 +28,7 @@ Botoens {
 }
 
 .logo img {
-    width: 100px;
+    width: 60px;
     cursor: pointer;
 }
 
@@ -56,41 +56,80 @@ Botoens {
 .menu nav a:hover::after{
     width: 50px;
 }
-.Botoens button {
-    width: 40px;
-    height: 40px;
-    background-image: linear-gradient(45deg,#16131d);
-    border:none;
-    cursor: pointer;
-    border-radius: 8px;
-    margin-right: 10px;
-}
-
-.Botoens button i {
-    font-size: 20px;
-    color: #ffffff;
-}
 .Imagem{
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url('img_Inicio/jujutsu.jpe');
     width: 100%;
-    height: 50vh;
-    filter: blur(5px);
-    background-size: cover;
-    
-}
-.backdrop{
-    backdrop-filter: blur(5em);
+    height: 100%;
+   
 }
 .Imagem img {
     width: 50%;
-    height: 35%;
-
+    height: 100%;
+}
+.escrita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-left: -640px;
+   
+}
+.sobre-anime{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    color:#ffffff;
+    justify-content: center;
+   --line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: var(--line-height);
+    align-items: center;
+    gap: 200px;
+}
+.sobre-anime video {
+    margin-top: 6vh;
 }
 
-.envolta{
-    background-color: red;
+.episodios video {
+    margin-left: 30px;
+    width: 250px;
+    height: 200px;
+}
+h1 {
+    color: #ffffff;
     display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: xx-large;
+}
+
+.cont1{
+   width: 100vh;
+   display: flex;
+   flex-direction: column;
+   gap: 23px;
+   align-items: center;
+}
+.episodios {
+    width: 120vh;
+margin-left: 20vh;
+}
+.titulo {
+    margin-left: -30vh;
+}
+.titulo2 {
+    margin-left: -65vh;
+}
+.episodios2 {
+    width: 120vh;
+    margin-left: 20vh;
+}
+.episodios2 video {
+    margin-left: 30px;
+    width: 250px;
+    height: 200px;
 }
